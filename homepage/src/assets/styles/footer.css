@@ -1,0 +1,30 @@
+footer
+{
+    color: var(--one);
+    padding: 2em 0 8em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5em;
+}
+
+.dora
+{
+    width: 50%;
+    border-radius: 50%;
+}
+
+@media (min-width: 600px)
+{
+    footer
+    {
+        flex-direction: row;
+        padding: 2em 0;
+        margin-left: 12em;
+    }
+
+    .dora
+    {
+        width: 10rem;
+    }
+}
