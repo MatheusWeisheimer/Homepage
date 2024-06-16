@@ -20,6 +20,7 @@ header
 {
     font-size: 1.75rem;
     margin-top: .75em;
+    margin-bottom: .25em;
 }
 
 .header_picture
@@ -35,9 +36,6 @@ header
 
 @media (min-width: 600px)
 {
-
-    /* HEADER */
-
     header
     {
         flex-direction: row-reverse;
