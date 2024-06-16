@@ -5,6 +5,57 @@ main
     padding: 2em;
 }
 
+.about_me
+{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.about_me > h2{
+    font-size: 1.5rem;
+}
+
+.about_me > p 
+{
+    font-size: 1.2rem;
+}
+
+.social_media
+{
+    margin-top: 2em;
+    display: flex;
+    gap: 2em;
+}
+
+.social_media_anchor
+{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    background-color: var(--one);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gmail
+{
+    background-image: url(../images/gmail.png);
+    background-size: 70%;
+}
+
+.github
+{
+    background-image: url(../images/github.png);
+    background-size: 70%;
+}
+
+.linkedin
+{
+    background-image: url(../images/linkedin.png);
+    background-size: 60%;
+}
+
 @media (min-width: 600px)
 {
     main
@@ -19,5 +70,10 @@ main
     {
         width: 70%;
         max-width: 900px;
+    }
+
+    .social_media
+    {
+        align-self: center;
     }
 }

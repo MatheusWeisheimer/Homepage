@@ -13,8 +13,8 @@ function App() {
 
   return (
     <>
-      <Header languageOption={languageOption} changeLanguageOption={changeLanguageOption}/>
-      <Home languageOption={languageOption} changeLanguageOption={changeLanguageOption}/>
+      <Header languageOption={languageOption} changeLanguageOption={changeLanguageOption} />
+      <Home languageOption={languageOption} />
       <Footer />
     </>
   );
