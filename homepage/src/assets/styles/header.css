@@ -34,6 +34,37 @@ header
     border-radius: 50%;
 }
 
+.language_options
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: .5em;
+    display: flex;
+    flex-direction: column;
+    gap: .25em;
+}
+
+.language_btn
+{
+    height: 1.75rem; 
+    width: 2.3rem;
+    border: none;
+    background-position: center;
+    background-size: cover;
+}
+
+.pt_br
+{
+    background-image: url(../images/pt_br.jpg);
+}
+
+.en_uk
+{
+    background-image: url(../images/en_uk.jpg);
+}
+
 @media (min-width: 600px)
 {
     header
@@ -56,5 +87,13 @@ header
     .title_container > h1
     {
         font-size: 2rem;
+    }
+    
+    .language_options
+    {
+        top: 0;
+        right: 0;
+        flex-direction: row;
+        gap: .5em;
     }
 }
