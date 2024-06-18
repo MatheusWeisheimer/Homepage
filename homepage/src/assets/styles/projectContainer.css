@@ -1,7 +1,13 @@
 .container
 {
+    background-color: var(--five);
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1em;
+    border-radius: .75em;
     display: flex;
     flex-direction: column;
+    gap: 1.5em;
 }
 
 .project_image, .tec_icon
@@ -13,19 +19,35 @@
 
 .project_image
 {
-    width: 300px;
+    width: 100%;
     height: 300px;
+    border-radius: .75em;
 }
 
-.tec_icon
+.project_name
 {
-    width: 4rem;
-    height: 4rem;
+    font-size: 2rem;
+}
+
+.project_description
+{
+    font-size: 1.15rem;
+    line-height: 1.2em;
 }
 
 .tec_container
 {
     display: flex;
+    justify-content: flex-start;
+    gap: 2em;
 }
+
+.tec_icon
+{
+    width: 3rem;
+    height: 3rem;
+}
+
+
 
 

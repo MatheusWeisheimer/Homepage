@@ -15,11 +15,15 @@ function ProjectContainer({projects, languageOption}) {
         )
     })
 
+    console.log(languageOption)
+
     return(
         <div className="container">
             <div className="project_image" style={{backgroundImage: `url(${projectThumbPath})`}}></div>
             <h3 className="project_name">{name}</h3>
-            <p className="project_description">{description}</p>
+            <p className="project_description">
+                {languageOption === "en_uk" ? description.en_uk : description.pt_br}
+            </p>
             <div className="tec_container">
                 {tecEl}
             </div>

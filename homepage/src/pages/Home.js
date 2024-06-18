@@ -3,8 +3,12 @@ import projects from '../assets/data/projectsData'
 import ProjectContainer from '../components/ProjectContainer';
 
 function Home({languageOption}) {
+    const projectsEl = projects.map(project => (
+        <ProjectContainer projects={project} languageOption={languageOption} key={project.name}/>
+    ))
+
     return (
-        <main>
+        <main className="home">
             <section className="about_me">
                 <h2>
                     {languageOption === "en_uk" ? "Hi there! I'm Matheus."
@@ -20,8 +24,13 @@ function Home({languageOption}) {
                     <li><a href="https://www.linkedin.com/in/matheus-weisheimer-30325a242/" target="blank"><div className="social_media_anchor linkedin"></div></a></li>
                 </ul>
             </section>
-            <section>
-                <ProjectContainer projects={projects[0]}/>
+            <section className="projects">
+                <h2>
+                    {languageOption === "en_uk" ? "My projects" : "Meus projetos"}
+                </h2>
+                <div className="projects_container">
+                    {projectsEl}
+                </div>
             </section>
         </main>
     );
