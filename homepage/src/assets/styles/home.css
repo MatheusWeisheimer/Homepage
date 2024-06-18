@@ -14,11 +14,13 @@ main
 
 .about_me > h2{
     font-size: 1.5rem;
+    line-height: 2em;
 }
 
 .about_me > p 
 {
     font-size: 1.2rem;
+    line-height: 1.75em;
 }
 
 .social_media

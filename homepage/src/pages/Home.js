@@ -1,4 +1,6 @@
 import '../assets/styles/home.css'
+import projects from '../assets/data/projectsData'
+import ProjectContainer from '../components/ProjectContainer';
 
 function Home({languageOption}) {
     return (
@@ -6,7 +8,7 @@ function Home({languageOption}) {
             <section className="about_me">
                 <h2>
                     {languageOption === "en_uk" ? "Hi there! I'm Matheus."
-                    : "Olá! Meu nome é Matheus"}
+                    : "Olá! Meu nome é Matheus."}
                 </h2>
                 <p>
                     {languageOption === "en_uk" ? "I'm a 23-year-old computer science student living in the country of Brazil. Ever since I can remember, I've been fascinated by the endless possibilities of technology, which led me to pursue the study of computer science. I'm passionate about coding, problem-solving, and continuously learning new things in this ever-evolving field. I also enjoy immersing myself in music, gaming, and movies, which you can explore more about on my website. Feel free to connect with me through my contact information or on social media."
@@ -17,6 +19,9 @@ function Home({languageOption}) {
                     <li><a href="https://github.com/MatheusWeisheimer" target="blank"><div className="social_media_anchor github"></div></a></li>
                     <li><a href="https://www.linkedin.com/in/matheus-weisheimer-30325a242/" target="blank"><div className="social_media_anchor linkedin"></div></a></li>
                 </ul>
+            </section>
+            <section>
+                <ProjectContainer projects={projects[0]}/>
             </section>
         </main>
     );

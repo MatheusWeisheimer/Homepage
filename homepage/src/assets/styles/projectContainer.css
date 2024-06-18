@@ -1,0 +1,31 @@
+.container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.project_image, .tec_icon
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project_image
+{
+    width: 300px;
+    height: 300px;
+}
+
+.tec_icon
+{
+    width: 4rem;
+    height: 4rem;
+}
+
+.tecnologies_container
+{
+    display: flex;
+}
+
+

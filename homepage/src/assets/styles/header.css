@@ -65,7 +65,7 @@ header
     background-image: url(../images/en_uk.jpg);
 }
 
-@media (min-width: 600px)
+@media (min-width: 700px)
 {
     header
     {
@@ -91,9 +91,15 @@ header
     
     .language_options
     {
+        margin: 1.5em;
         top: 0;
         right: 0;
-        flex-direction: row;
         gap: .5em;
+    }
+
+    .language_btn
+    {
+        height: 2.25rem; 
+        width: 3rem;
     }
 }
